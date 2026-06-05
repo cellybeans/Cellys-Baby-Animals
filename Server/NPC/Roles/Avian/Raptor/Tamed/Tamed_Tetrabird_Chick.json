@@ -1,0 +1,50 @@
+{
+  "Type": "Variant",
+  "Reference": "AH_Template_Livestock_Tamed",
+  "Modify": {
+    "Appearance": "Tetrabird_Chick",
+    "FlockArray": [
+      "Tamed_Tetrabird_Chick",
+      "Tamed_Tetrabird"
+    ],
+    "AttractiveItemSet": [
+      "Plant_Fruit_Berries_Red"
+    ],
+    "FollowItemDistance": [
+      1.2,
+      1.5
+    ],
+    "DropList": "Drop_Tetrabird",
+    "MaxHealth": 15,
+    "MaxSpeed": 4,
+    "ViewRange": 12,
+    "ViewSector": 300,
+    "HearingRange": 7,
+    "AlertedRange": 14,
+    "AlertedActionRange": 4,
+    "AbsoluteDetectionRange": 1,
+    "IsMemory": true,
+    "MemoriesCategory": "Avian",
+    "MemoriesNameOverride": "Tetrabird_Chick",
+    "NameTranslationKey": {
+      "Compute": "NameTranslationKey"
+    },
+    "AttitudeGroup": "AH_Livestock_Tamed",
+    "CanFollow": true,
+    "CanHold": true,
+    "CanDefend": false,
+    "CanAttackTarget": false,
+    "CanMoveToLocation": true,
+    "CanReturnHome": true,
+    "CanRecall": true,
+    "CanSetHome": true,
+    "CanBreedPair": true
+  },
+  "Parameters": {
+    "NameTranslationKey": {
+      "Value": "server.npcRoles.Tamed_Tetrabird_Chick.name",
+      "Description": "Translation key for NPC name display"
+    }
+  }
+}
+

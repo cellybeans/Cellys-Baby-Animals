@@ -1,0 +1,26 @@
+Celly's Baby Animals Changelog
+v1.0.6 	-Re-added adult NPC role files and Deer_Doe model definitions 
+     	 now that mod load order can be controlled under world settings
+     	-Added cross-breeding for Fox & Fox_Arctic
+     	-Added cross-breeding for Wolf_Black and Wolf_White 
+v1.0.5 	-Removed all adult NPC role files that were added in an effort to prevent 
+     	 texture inheritance issues in CWS. This should solve NPC Validation errors. 
+     	-Removed Deer_Doe model definitions due to texture inheritance issues in
+    	 multiple animals that inherit it
+      	-Updated CBABreedNeutral to include genders and multi-role breeding definitions added in AAH! v1.5.x
+      	-Updated CBABreedBeast to include genders and the multi-role breeding definitions added in AAH! v1.5.x
+
+v1.0.4 	-Fixed Fox_Cub laydown and sleep animations
+     	-Added LoadAfter values in manifest.json to try and ensure required
+     	 dependencies load first
+
+v1.0.3 	-Added 2 more base colors to fox_cub
+v1.0.2 	-Fixed NPC validation issue
+v1.0.1	-Adjusted baby fox model 
+     	-Added collars for adult tamed wolves and hyenas 
+      	-Added NPC Role files for Wolf_Black, Wolf_White, Bear_Grizzly,
+     	 Bear_Polar, Moose_Cow, Moose_Bull, Deer_Stag, Deer_Doe, and their
+     	 tamed variants to fix skin inheritance bugs in CWS 
+     	-Enables Deer_Doe variants from CWS to match Deer_Stag's options and genetics
+v1.0.0 	-Initial Release
+      	-Adds tetrabird chick, flamingo chick, fox cub, arctic fox cub

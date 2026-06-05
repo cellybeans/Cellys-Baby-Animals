@@ -1,0 +1,272 @@
+{
+  "Enabled": true,
+  "Priority": 1,
+  "RoleIds": [
+    "Bison",
+    "Bison_Calf",
+    "Boar",
+    "Boar_Piglet",
+    "Bunny",
+    "Camel",
+    "Camel_Calf",
+    "Chicken",
+    "Chicken_Chick",
+    "Chicken_Desert",
+    "Chicken_Desert_Chick",
+    "Cow",
+    "Cow_Calf",
+    "Goat",
+    "Goat_Kid",
+    "Horse",
+    "Horse_Foal",
+    "Mosshorn",
+    "Mosshorn_Plain",
+    "Mouflon",
+    "Mouflon_Lamb",
+    "Pig",
+    "Pig_Piglet",
+    "Pig_Wild",
+    "Pig_Wild_Piglet",
+    "Rabbit",
+    "Ram",
+    "Ram_Lamb",
+    "Sheep",
+    "Sheep_Lamb",
+    "Skrill",
+    "Skrill_Chick",
+    "Turkey",
+    "Turkey_Chick",
+    "Warthog",
+    "Warthog_Piglet",
+    "Tamed_Bison",
+    "Tamed_Bison_Calf",
+    "Tamed_Boar",
+    "Tamed_Boar_Piglet",
+    "Tamed_Bunny",
+    "Tamed_Camel",
+    "Tamed_Camel_Calf",
+    "Tamed_Chicken",
+    "Tamed_Chicken_Chick",
+    "Tamed_Chicken_Desert",
+    "Tamed_Chicken_Desert_Chick",
+    "Tamed_Cow",
+    "Tamed_Cow_Calf",
+    "Tamed_Goat",
+    "Tamed_Goat_Kid",
+    "Tamed_Horse",
+    "Tamed_Horse_Foal",
+    "Tamed_Mosshorn",
+    "Tamed_Mosshorn_Plain",
+    "Tamed_Mouflon",
+    "Tamed_Mouflon_Lamb",
+    "Tamed_Pig",
+    "Tamed_Pig_Piglet",
+    "Tamed_Pig_Wild",
+    "Tamed_Pig_Wild_Piglet",
+    "Tamed_Rabbit",
+    "Tamed_Ram",
+    "Tamed_Ram_Lamb",
+    "Tamed_Sheep",
+    "Tamed_Sheep_Lamb",
+    "Tamed_Skrill",
+    "Tamed_Skrill_Chick",
+    "Tamed_Turkey",
+    "Tamed_Turkey_Chick",
+    "Tamed_Warthog",
+    "Tamed_Warthog_Piglet"
+  ],
+  "Interactions": [
+    {
+      "Type": "Tame",
+      "ItemsParam": "AttractiveItemSet",
+      "RoleParam": "TameRoleChange",
+      "Requires": {
+        "All": {
+          "IsNotTamed": true
+        }
+      },
+      "Effects": {
+        "PlaySound": {
+          "SoundEvent": "SFX_Fen_Stalker_Eat",
+          "Volume": 0.3,
+          "Pitch": 2
+        },
+        "SpawnParticles": {
+          "ParticleSystem": "Hearts",
+          "Offset": [
+            0,
+            0.6,
+            0
+          ],
+          "AttachTarget": "Entity"
+        }
+      }
+    },
+    {
+      "Type": "Custom",
+      "Requires": {
+        "All": {
+          "IsNotTamed": true,
+          "ItemsInHand": [
+            {
+              "ItemsParam": "AttractiveItemSet",
+              "Operator": "NoneOf"
+            }
+          ]
+        }
+      },
+      "Effects": {
+        "SpawnParticles": {
+          "ParticleSystemParam": "AttractiveItemSetParticles",
+          "AttachTarget": "Node",
+          "AttachNode": "Head",
+          "OffsetParam": "ParticleOffset",
+          "PlayerOnly": false
+        }
+      },
+      "PromptHint": "server.interactionHints.tame"
+    },
+    {
+      "Type": "Breed",
+      "MinHappiness": 80,
+      "Requires": {
+        "All": {
+          "ItemsInHand": [
+            {
+              "ItemsParam": "AttractiveItemSet"
+            }
+          ],
+          "PlayerMovementState": [
+            {
+              "State": "Crouching"
+            }
+          ]
+        }
+      },
+      "Effects": {
+        "RemoveItemsHand": {
+          "Quantity": 1,
+          "ItemsParam": "AttractiveItemSet"
+        },
+        "SpawnParticles": {
+          "ParticleSystem": "Hearts_Subtle",
+          "OffsetParam": "ParticleOffset",
+          "AttachTarget": "Node",
+          "AttachNode": "Head"
+        }
+      }
+    },
+    {
+      "Type": "Feed",
+      "Enabled": true,
+      "ItemsParam": "AttractiveItemSet",
+      "ItemsInHand": [
+        {
+          "Item": "Tw_Feed_Herbivore"
+        }
+      ],
+      "Heal": 25,
+      "Effects": {
+        "PlaySound": {
+          "SoundEvent": "SFX_Fen_Stalker_Eat",
+          "Volume": 0.3,
+          "Pitch": 2
+        },
+        "SpawnParticles": {
+          "ParticleSystem": "Pet_Heal",
+          "Color": "#fe6969",
+          "Offset": [
+            0,
+            0.6,
+            0
+          ],
+          "AttachTarget": "Node",
+          "AttachNode": "Body",
+          "OffsetParam": "ParticleOffset"
+        }
+      },
+      "Requires": {
+        "All": {}
+      }
+    },
+    {
+      "Type": "Harvest",
+      "Enabled": true,
+      "RequireHarvestInteractionContext": true,
+      "RequireHarvestAlarmReady": true
+    },
+    {
+      "Type": "Mount",
+      "Enabled": true
+    },
+    {
+      "Type": "Custom",
+      "Requires": {
+        "All": {
+          "AlarmState": [
+            {
+              "Name": "Pet_Ready",
+              "State": "unset"
+            }
+          ],
+          "PlayerHandEmpty": true,
+          "Parameter": [
+            {
+              "Name": "IsPettable",
+              "Value": "true",
+              "Operator": "Equals"
+            }
+          ]
+        }
+      },
+      "Effects": {
+        "TriggerNpcHook": {
+          "HookId": "TwHook_Pet",
+          "Consume": true
+        }
+      },
+      "PromptHint": "server.interactionHints.pet"
+    },
+    {
+      "Type": "ModeCycle",
+      "Enabled": true,
+      "Cycle": [
+        {
+          "State": "Follow",
+          "Message": "Following"
+        },
+        {
+          "State": "Hold",
+          "Message": "Staying"
+        },
+        {
+          "State": "Idle",
+          "Message": "Wandering"
+        }
+      ],
+      "ShowFloatingText": true,
+      "Effects": {
+        "PlaySound": {
+          "SoundEvent": "SFX_Creative_Play_Selection_Widget"
+        }
+      }
+    },
+    {
+      "Type": "Custom",
+      "Requires": {
+        "All": {
+          "ItemsInHand": [
+            {
+              "Items": [
+                null
+              ]
+            }
+          ],
+          "NpcHealthPercent": [
+            {}
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "Parent": "Fox_Cub_Base",
+  "Model": "NPC/Beast/Fox_Cub/Models/Model.blockymodel",
+  "Texture": "NPC/Beast/Fox_Cub/Models/Arctic.png",
+  
+	"RandomAttachmentSets": {
+		"Base": {
+			"2000": {
+				"Model": "NPC/Beast/Fox_Cub/Models/Model.blockymodel",
+				"Texture": "NPC/Beast/Fox_Cub/Models/Attachments/Base_2000.png",
+				"Weight": 0
+			},
+			"2001": {
+				"Model": "NPC/Beast/Fox_Cub/Models/Model.blockymodel",
+				"Texture": "NPC/Beast/Fox_Cub/Models/Attachments/Base_2001.png",
+				"Weight": 0
+			},
+			"2002": {
+				"Model": "NPC/Beast/Fox_Cub/Models/Model.blockymodel",
+				"Texture": "NPC/Beast/Fox_Cub/Models/Attachments/Base_2002.png",
+				"Weight": 0
+			},
+			"2003": {
+				"Model": "NPC/Beast/Fox_Cub/Models/Model.blockymodel",
+				"Texture": "NPC/Beast/Fox_Cub/Models/Attachments/Base_2003.png",
+				"Weight": 0
+			},
+			"2004": {
+				"Model": "NPC/Beast/Fox_Cub/Models/Model.blockymodel",
+				"Texture": "NPC/Beast/Fox_Cub/Models/Attachments/Base_2004.png",
+				"Weight": 0
+			},
+      
+			"2500": {
+				"Model": "NPC/Beast/Fox_Cub/Models/Model.blockymodel",
+				"Texture": "NPC/Beast/Fox_Cub/Models/Attachments/Base_2500.png",
+				"Weight": 10
+			},
+			"2501": {
+				"Model": "NPC/Beast/Fox_Cub/Models/Model.blockymodel",
+				"Texture": "NPC/Beast/Fox_Cub/Models/Attachments/Base_2501.png",
+				"Weight": 10
+			},
+			"2502": {
+				"Model": "NPC/Beast/Fox_Cub/Models/Model.blockymodel",
+				"Texture": "NPC/Beast/Fox_Cub/Models/Attachments/Base_2501.png",
+				"Weight": 10
+			}
+		},
+		"Paws": {
+			"2000": {
+				"Model": "NPC/Beast/Fox_Cub/Models/Model.blockymodel",
+				"Texture": "NPC/Beast/Fox_Cub/Models/Attachments/Paws_2000.png",
+				"Weight": 0
+			},
+			"2001": {
+				"Model": "NPC/Beast/Fox_Cub/Models/Model.blockymodel",
+				"Texture": "NPC/Beast/Fox_Cub/Models/Attachments/Paws_2001.png",
+				"Weight": 0
+			},
+			"2002": {
+				"Model": "NPC/Beast/Fox_Cub/Models/Model.blockymodel",
+				"Texture": "NPC/Beast/Fox_Cub/Models/Attachments/Paws_2002.png",
+				"Weight": 0
+			},
+
+			"2500": {
+				"Model": "NPC/Beast/Fox_Cub/Models/Model.blockymodel",
+				"Texture": "NPC/Beast/Fox_Cub/Models/Attachments/Paws_2500.png",
+				"Weight": 10
+			},
+			"2501": {
+				"Model": "NPC/Beast/Fox_Cub/Models/Model.blockymodel",
+				"Texture": "NPC/Beast/Fox_Cub/Models/Attachments/Paws_2501.png",
+				"Weight": 10
+			},
+			"2502": {
+				"Model": "NPC/Beast/Fox_Cub/Models/Model.blockymodel",
+				"Texture": "NPC/Beast/Fox_Cub/Models/Attachments/Paws_2501.png",
+				"Weight": 5
+			}
+		},
+		"Fluff": {
+			"2000": {
+				"Model": "NPC/Beast/Fox_Cub/Models/Model.blockymodel",
+				"Texture": "NPC/Beast/Fox_Cub/Models/Attachments/Fluff_2000.png",
+				"Weight": 0
+			},
+			"2001": {
+				"Model": "NPC/Beast/Fox_Cub/Models/Model.blockymodel",
+				"Texture": "NPC/Beast/Fox_Cub/Models/Attachments/Fluff_2001.png",
+				"Weight": 0
+			},
+			"2002": {
+				"Model": "NPC/Beast/Fox_Cub/Models/Model.blockymodel",
+				"Texture": "NPC/Beast/Fox_Cub/Models/Attachments/Fluff_2002.png",
+				"Weight": 0
+			},
+      
+			"2500": {
+				"Model": "NPC/Beast/Fox_Cub/Models/Model.blockymodel",
+				"Texture": "NPC/Beast/Fox_Cub/Models/Attachments/Fluff_2500.png",
+				"Weight": 10
+			},
+			"2501": {
+				"Model": "NPC/Beast/Fox_Cub/Models/Model.blockymodel",
+				"Texture": "NPC/Beast/Fox_Cub/Models/Attachments/Fluff_2501.png",
+				"Weight": 10
+			},
+			"2502": {
+				"Model": "NPC/Beast/Fox_Cub/Models/Model.blockymodel",
+				"Texture": "NPC/Beast/Fox_Cub/Models/Attachments/Fluff_2501.png",
+				"Weight": 5
+			}
+		},
+		"Eyes": {
+			"2000": {
+				"Model": "NPC/Beast/Fox_Cub/Models/Model.blockymodel",
+				"Texture": "NPC/Beast/Fox_Cub/Models/Attachments/Eyes_2000.png",
+				"Weight": 0
+			},
+			"2001": {
+				"Model": "NPC/Beast/Fox_Cub/Models/Model.blockymodel",
+				"Texture": "NPC/Beast/Fox_Cub/Models/Attachments/Eyes_2001.png",
+				"Weight": 0
+			},
+			"2002": {
+				"Model": "NPC/Beast/Fox_Cub/Models/Model.blockymodel",
+				"Texture": "NPC/Beast/Fox_Cub/Models/Attachments/Eyes_2002.png",
+				"Weight": 0
+			},
+
+			"2500": {
+				"Model": "NPC/Beast/Fox_Cub/Models/Model.blockymodel",
+				"Texture": "NPC/Beast/Fox_Cub/Models/Attachments/Eyes_2500.png",
+				"Weight": 10
+			},
+			"2501": {
+				"Model": "NPC/Beast/Fox_Cub/Models/Model.blockymodel",
+				"Texture": "NPC/Beast/Fox_Cub/Models/Attachments/Eyes_2501.png",
+				"Weight": 10
+			},
+			"2502": {
+				"Model": "NPC/Beast/Fox_Cub/Models/Model.blockymodel",
+				"Texture": "NPC/Beast/Fox_Cub/Models/Attachments/Eyes_2502.png",
+				"Weight": 10
+			}
+		}
+	}
+}

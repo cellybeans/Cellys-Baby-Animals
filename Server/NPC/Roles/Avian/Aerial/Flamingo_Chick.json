@@ -1,0 +1,57 @@
+{
+  "Type": "Variant",
+  "Reference": "AH_Template_Animal_Neutral",
+  "Modify": {
+    "Appearance": "Flamingo_Chick",
+    "FlockArray": [
+      "Flamingo_Chick",
+      "Flamingo"
+    ],
+    "AttractiveItemSet": [
+      "Food_Fish_Raw"
+    ],
+    "AttractiveItemSetParticles": "Want_Food_Fish_Raw",
+    "DropList": "Drop_Skrill_Chick",
+    "MaxHealth": 15,
+    "MaxSpeed": 4,
+    "ViewRange": 8,
+    "ViewSector": 270,
+    "HearingRange": 6,
+    "AlertedRange": 10,
+    "AlertedActionRange": 4,
+    "AbsoluteDetectionRange": 1,
+    "Timid": true,
+    "IsTameable": {
+      "Compute": "IsTameable"
+    },
+    "TameRoleChange": {
+      "Compute": "TameRoleChange"
+    },
+    "IsMemory": true,
+    "MemoriesCategory": "Avian",
+    "MemoriesNameOverride": "Flamingo_Chick",
+    "NameTranslationKey": {
+      "Compute": "NameTranslationKey"
+    },
+    "SleepAnimation": "",
+    "SleepEnterAnimation": "",
+    "WakeAnimation": "",
+    "NeedsSeekConsumeAnimation": "",
+    "AlertedAnimation": "",
+    "CuriousAnimation": ""
+  },
+  "Parameters": {
+    "NameTranslationKey": {
+      "Value": "server.npcRoles.Flamingo_Chick.name",
+      "Description": "Translation key for NPC name display"
+    },
+    "IsTameable": {
+      "Value": true,
+      "Description": "Whether this NPC can be tamed."
+    },
+    "TameRoleChange": {
+      "Value": "Tamed_Flamingo_Chick",
+      "Description": "The role the NPC will change into when it's tamed."
+    }
+  }
+}

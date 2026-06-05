@@ -1,0 +1,192 @@
+{
+  "Enabled": true,
+  "Priority": 200,
+  "RoleIds": [
+    "Tamed_Bear_Grizzly",
+    "Tamed_Bear_Polar",
+    "Tamed_Bison",
+    "Tamed_Bison_Calf",
+    "Tamed_Boar",
+    "Tamed_Boar_Piglet",
+    "Tamed_Bunny",
+    "Tamed_Camel",
+    "Tamed_Camel_Calf",
+    "Tamed_Chicken",
+    "Tamed_Chicken_Chick",
+    "Tamed_Chicken_Desert",
+    "Tamed_Chicken_Desert_Chick",
+    "Tamed_Cow",
+    "Tamed_Cow_Calf",
+    "Tamed_Crocodile",
+    "Tamed_Emberwulf",
+    "Tamed_Fen_Stalker",
+    "Tamed_Fox",
+    "Tamed_Fox_Arctic",
+    "Tamed_Fox_Cub",
+    "Tamed_Fox_Arctic_Cub",
+    "Tamed_Goat",
+    "Tamed_Goat_Kid",
+    "Tamed_Horse",
+    "Tamed_Horse_Foal",
+    "Tamed_Hyena",
+    "Tamed_Larva_Silk",
+    "Tamed_Leopard_Snow",
+    "Tamed_Molerat",
+    "Tamed_Mosshorn",
+    "Tamed_Mosshorn_Plain",
+    "Tamed_Mouflon",
+    "Tamed_Mouflon_Lamb",
+    "Tamed_Pig",
+    "Tamed_Pig_Piglet",
+    "Tamed_Pig_Wild",
+    "Tamed_Pig_Wild_Piglet",
+    "Tamed_Rabbit",
+    "Tamed_Ram",
+    "Tamed_Ram_Lamb",
+    "Tamed_Raptor_Cave",
+    "Tamed_Rat",
+    "Tamed_Rex_Cave",
+    "Tamed_Scorpion",
+    "Tamed_Sheep",
+    "Tamed_Sheep_Lamb",
+    "Tamed_Skrill",
+    "Tamed_Skrill_Chick",
+    "Tamed_Slug_Magma",
+    "Tamed_Snake_Cobra",
+    "Tamed_Snake_Marsh",
+    "Tamed_Snake_Rattle",
+    "Tamed_Snapdragon",
+    "Tamed_Spider",
+    "Tamed_Spider_Cave",
+    "Tamed_Tiger_Sabertooth",
+    "Tamed_Toad_Rhino",
+    "Tamed_Toad_Rhino_Magma",
+    "Tamed_Turkey",
+    "Tamed_Turkey_Chick",
+    "Tamed_Warthog",
+    "Tamed_Warthog_Piglet",
+    "Tamed_Wolf_Black",
+    "Tamed_Wolf_White",
+    "Tamed_Yeti"
+  ],
+  "Values": {
+    "CurrentDefault": 50.0,
+    "Min": 0.0,
+    "Max": 100.0
+  },
+  "Equilibrium": {
+    "BaseSetpoint": 50.0,
+    "ConvergencePerMinute": 8.0
+  },
+  "Impulses": {
+    "GainOnFeed": 3.0,
+    "HandFeedDurationMinutes": 15.0,
+    "FeedImpulseDurationMinutes": 15.0,
+    "FeedItemImpulses": {
+      "Tw_Feed_Herbivore": -8.0
+    },
+    "FeedParamImpulses": {
+      "FoodFavorite": 5.0,
+      "FoodGeneric": -8.0,
+      "FoodPremium": 10.0
+    },
+    "GainOnPet": 4.0,
+    "LoseOnDamage": 10.0
+  },
+  "Modifiers": {
+    "Hunger": {
+      "Enabled": true,
+      "Bands": [
+        {
+          "Id": "well_fed",
+          "Label": "Well-fed",
+          "MinPercent": 80.0,
+          "MaxPercent": 100.0,
+          "Offset": 10.0
+        },
+        {
+          "Id": "sated",
+          "Label": "Sated",
+          "MinPercent": 40.0,
+          "MaxPercent": 80.0,
+          "Offset": 0.0
+        },
+        {
+          "Id": "hungry",
+          "Label": "Hungry",
+          "MinPercent": 10.0,
+          "MaxPercent": 40.0,
+          "Offset": -15.0
+        },
+        {
+          "Id": "starving",
+          "Label": "Starving",
+          "MinPercent": 0.0,
+          "MaxPercent": 10.0,
+          "Offset": -30.0
+        }
+      ]
+    },
+    "Thirst": {
+      "Enabled": true,
+      "Bands": [
+        {
+          "Id": "quenched",
+          "Label": "Quenched",
+          "MinPercent": 80.0,
+          "MaxPercent": 100.0,
+          "Offset": 8.0
+        },
+        {
+          "Id": "hydrated",
+          "Label": "Hydrated",
+          "MinPercent": 40.0,
+          "MaxPercent": 80.0,
+          "Offset": 0.0
+        },
+        {
+          "Id": "thirsty",
+          "Label": "Thirsty",
+          "MinPercent": 10.0,
+          "MaxPercent": 40.0,
+          "Offset": -18.0
+        },
+        {
+          "Id": "dehydrated",
+          "Label": "Dehydrated",
+          "MinPercent": 0.0,
+          "MaxPercent": 10.0,
+          "Offset": -35.0
+        }
+      ]
+    },
+    "Population": {
+      "Enabled": true,
+      "Radius": 14.0,
+      "Bands": [
+        {
+          "Id": "lonely",
+          "Label": "Lonely",
+          "MinCount": 0,
+          "MaxCount": 0,
+          "Offset": -12.0
+        },
+        {
+          "Id": "social",
+          "Label": "Social",
+          "MinCount": 1,
+          "MaxCount": 8,
+          "Offset": 8.0
+        },
+        {
+          "Id": "crowded",
+          "Label": "Crowded",
+          "MinCount": 9,
+          "MaxCount": -1,
+          "Offset": -15.0
+        }
+      ]
+    },
+    "OwnerNearbyOffset": 5.0
+  }
+}
