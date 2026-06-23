@@ -1,0 +1,90 @@
+{
+  "Parent": "Chick",
+  "Model": "NPC/Flying_Wildlife/Flamingo_Chick/Models/Model.blockymodel",
+  "Texture": "NPC/Flying_Wildlife/Flamingo_Chick/Models/Texture.png",
+  "EyeHeight": 0.4,
+  "HitBox": {
+    "Max": {
+      "X": 0.2,
+      "Y": 0.5,
+      "Z": 0.2
+    },
+    "Min": {
+      "X": -0.2,
+      "Y": 0,
+      "Z": -0.2
+    }
+  },
+
+	"RandomAttachmentSets": {
+		"Base": {
+			"2000": {
+				"Model": "NPC/Flying_Wildlife/Flamingo_Chick/Models/Model.blockymodel",
+				"Texture": "NPC/Flying_Wildlife/Flamingo_Chick/Models/Empty.png",
+				"Weight": 1
+			},
+			"2001": {
+				"Model": "NPC/Flying_Wildlife/Flamingo_Chick/Models/Model.blockymodel",
+				"Texture": "NPC/Flying_Wildlife/Flamingo_Chick/Models/Attachments/Base_2001.png",
+				"Weight": 1
+			},
+			"2002": {
+				"Model": "NPC/Flying_Wildlife/Flamingo_Chick/Models/Model.blockymodel",
+				"Texture": "NPC/Flying_Wildlife/Flamingo_Chick/Models/Attachments/Base_2001.png",
+				"Weight": 1
+			}
+		},
+		"Beakfeet": {
+			"2000": {
+				"Model": "NPC/Flying_Wildlife/Flamingo_Chick/Models/Model.blockymodel",
+				"Texture": "NPC/Flying_Wildlife/Flamingo_Chick/Models/Empty.png",
+				"Weight": 1
+			},
+			"2001": {
+				"Model": "NPC/Flying_Wildlife/Flamingo_Chick/Models/Model.blockymodel",
+				"Texture": "NPC/Flying_Wildlife/Flamingo_Chick/Models/Attachments/Beakfeet_2001.png",
+				"Weight": 1
+			},
+			"2002": {
+				"Model": "NPC/Flying_Wildlife/Flamingo_Chick/Models/Model.blockymodel",
+				"Texture": "NPC/Flying_Wildlife/Flamingo_Chick/Models/Attachments/Beakfeet_2001.png",
+				"Weight": 1
+			}
+		},
+		"Eyes": {
+			"2000": {
+				"Model": "NPC/Flying_Wildlife/Flamingo_Chick/Models/Model.blockymodel",
+				"Texture": "NPC/Flying_Wildlife/Flamingo_Chick/Models/Empty.png",
+				"Weight": 1
+			},
+			"2001": {
+				"Model": "NPC/Flying_Wildlife/Flamingo_Chick/Models/Model.blockymodel",
+				"Texture": "NPC/Flying_Wildlife/Flamingo_Chick/Models/Attachments/Eyes_2001.png",
+				"Weight": 1
+			},
+			"2002": {
+				"Model": "NPC/Flying_Wildlife/Flamingo_Chick/Models/Model.blockymodel",
+				"Texture": "NPC/Flying_Wildlife/Flamingo_Chick/Models/Attachments/Eyes_2001.png",
+				"Weight": 1
+			}
+		},
+		"Wings": {
+			"2000": {
+				"Model": "NPC/Flying_Wildlife/Flamingo_Chick/Models/Model.blockymodel",
+				"Texture": "NPC/Flying_Wildlife/Flamingo_Chick/Models/Empty.png",
+				"Weight": 1
+			},
+			"2001": {
+				"Model": "NPC/Flying_Wildlife/Flamingo_Chick/Models/Model.blockymodel",
+				"Texture": "NPC/Flying_Wildlife/Flamingo_Chick/Models/Empty.png",
+				"Weight": 1
+			},
+			"2002": {
+				"Model": "NPC/Flying_Wildlife/Flamingo_Chick/Models/Model.blockymodel",
+				"Texture": "NPC/Flying_Wildlife/Flamingo_Chick/Models/Empty.png",
+				"Weight": 1
+			}
+		}
+	},
+  "CrouchOffset": -0.075
+}

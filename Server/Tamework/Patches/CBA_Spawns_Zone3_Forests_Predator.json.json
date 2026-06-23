@@ -1,0 +1,25 @@
+{
+  "Id": "CBA_Spawns_Zone3_Forests_Predator.json",
+  "$Comment": "Always patch spawn for Spawns_Zone3_Forests_Predator to add CBA animals in zone 1 plains. TargetExists is evaluated per target.",
+  "Target": "Server/NPC/Spawn/World/Zone3/Spawns_Zone3_Forests_Predator.json",
+  "When": {
+    "TargetExists": true
+  },
+  "Priority": 20,
+  "Enabled": true,
+  "Operations": [
+    {
+      "Id": "add-fox-cubs-to-z3-forests-spawn-array",
+      "Op": "Insert",
+      "Path": "/NPCs",
+      "Position": "End",
+      "Value": 
+        {
+        "Weight": 3,
+        "SpawnBlockSet": "Soil_NoSnow",
+        "Id": "Fox_Cub",
+        "Flock": "Group_Small"
+      }
+    }
+  ]
+}

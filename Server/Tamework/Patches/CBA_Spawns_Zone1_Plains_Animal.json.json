@@ -1,0 +1,25 @@
+{
+  "Id": "CBA_Spawns_Zone1_Plains_Animal.json",
+  "$Comment": "Always patch spawn for Spawns_Zone1_Plains_Animal to add CBA animals in zone 1 plains. TargetExists is evaluated per target.",
+  "Target": "Server/NPC/Spawn/World/Zone1/Spawns_Zone1_Plains_Animal.json",
+  "When": {
+    "TargetExists": true
+  },
+  "Priority": 20,
+  "Enabled": true,
+  "Operations": [
+    {
+      "Id": "add-fox-cubs-to-z1-spawn-array",
+      "Op": "Insert",
+      "Path": "/NPCs",
+      "Position": "End",
+      "Value": 
+        {
+        "Weight": 5,
+        "SpawnBlockSet": "Soil",
+        "Id": "Fox_Cub",
+        "Flock": "Group_Small"
+      }
+    }
+  ]
+}

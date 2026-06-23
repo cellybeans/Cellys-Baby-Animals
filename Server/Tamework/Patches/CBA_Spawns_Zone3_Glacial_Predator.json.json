@@ -1,0 +1,25 @@
+{
+  "Id": "CBA_Spawns_Zone3_Glacial_Predator.json",
+  "$Comment": "Always patch spawn for Spawns_Zone3_Glacial_Predator to add CBA animals in zone 3 glacial.",
+  "Target": "Server/NPC/Spawn/World/Zone3/Spawns_Zone3_Glacial_Predator.json",
+  "When": {
+    "ModInstalled": "Alechilles:Alec's Animal Husbandry!"
+  },
+  "Priority": 20,
+  "Enabled": true,
+  "Operations": [
+    {
+      "Id": "add-fox-arctic-cubs-to-z3-glacial-spawn-array",
+      "Op": "Insert",
+      "Path": "/NPCs",
+      "Position": "End",
+      "Value": 
+        {
+        "Weight": 3,
+        "SpawnBlockSet": "IceAndSnow",
+        "Id": "Fox_Arctic_Cub",
+        "Flock": "Group_Small"
+      }
+    }
+  ]
+}

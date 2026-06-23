@@ -1,0 +1,25 @@
+{
+  "Id": "CBA_Spawns_Zone3_Mountains_Predator.json",
+  "$Comment": "Always patch spawn for Spawns_Zone1_Plains_Animal to add CBA animals in zone 1 plains. TargetExists is evaluated per target.",
+  "Target": "Server/NPC/Spawn/World/Zone3/Spawns_Zone3_Mountains_Predator.json",
+  "When": {
+    "ModInstalled": "Alechilles:Alec's Animal Husbandry!"
+  },
+  "Priority": 20,
+  "Enabled": true,
+  "Operations": [
+    {
+      "Id": "add-fox-arctic-cubs-to-z3-mountains-spawn-array",
+      "Op": "Insert",
+      "Path": "/NPCs",
+      "Position": "End",
+      "Value": 
+        {
+        "Weight": 3,
+        "SpawnBlockSet": "IceAndSnow",
+        "Id": "Fox_Arctic_Cub",
+        "Flock": "Group_Small"
+      }
+    }
+  ]
+}

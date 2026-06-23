@@ -1,0 +1,40 @@
+{
+  "Id": "CBA_Flamingo_AH_Tamed_Roles",
+  "$Comment": "Only runs when AH is installed. Tamed chicks switch from the vanilla livestock template to AH's tamed livestock template.",
+  "When": {
+    "ModInstalled": "Alechilles:Alec's Animal Husbandry!"
+  },
+  "Target": "Server/NPC/Roles/Avian/Aerial/Tamed/Tamed_Flamingo_Chick.json",
+  "Priority": 30,
+  "Enabled": true,
+  "Operations": [
+    {
+      "Id": "use-ah-tamed-template-for-flamingo-chick",
+      "Op": "Replace",
+      "Path": "/Reference",
+      "Value": "AH_Template_Livestock_Tamed"
+    },
+    {
+      "Id": "add-ah-command-capabilities-for-flamingo-chick",
+      "Op": "Merge",
+      "Path": "/Modify",
+      "Value": {
+        "IsMemory": false,
+        "AttitudeGroup": "AH_Livestock_Tamed",
+        "AttractiveItemSetParticles": "Want_Food_Fish_Raw",
+        "FoodItemIDs": [
+          "Food_Fish_Raw"
+        ],
+        "CanFollow": true,
+        "CanHold": true,
+        "CanDefend": false,
+        "CanAttackTarget": false,
+        "CanMoveToLocation": true,
+        "CanReturnHome": true,
+        "CanRecall": true,
+        "CanSetHome": true,
+        "CanBreedPair": true
+      }
+    }
+  ]
+}

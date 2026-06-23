@@ -1,8 +1,8 @@
 {
   "Group": "excellynt",
   "Name": "Celly's Baby Animals",
-  "Version": "1.0.6",
-  "Description": "Adds baby animals missing from base game!",
+  "Version": "1.1.0",
+  "Description": "Adds baby animals missing from base game. (Now with Tamework as only required dependency!)",
   "Authors": [
     {
       "Name": "Cellybeans (Excel_Lynt)",
@@ -13,15 +13,17 @@
   "Website": "https://www.curseforge.com/members/excel_lynt/projects",
   "ServerVersion": "0.5.0",
   "Dependencies": {
-    "Alechilles:Alec's Tamework!": "2.11.x",
-    "Alechilles:Alec's Animal Husbandry!": "1.5.x",
-    "excellynt:Celly's Wildlife Skins": "1.1.x"
+    "Alechilles:Alec's Tamework!": "*"
   },
-  "OptionalDependencies": {},
+  "OptionalDependencies": {
+
+    "excellynt:Celly's Wildlife Skins": "*",
+    "Alechilles:Alec's Animal Husbandry!": "*"
+},
   "LoadAfter": {
-    "Alechilles:Alec's Tamework!": "2.11.x",
-    "Alechilles:Alec's Animal Husbandry!": "1.5.x",
-    "excellynt:Celly's Wildlife Skins": "1.1.x"
+    "Alechilles:Alec's Tamework!": "*",
+    "Alechilles:Alec's Animal Husbandry!": "*",
+    "excellynt:Celly's Wildlife Skins": "*"
   },
   "DisabledByDefault": false,
   "IncludesAssetPack": false,

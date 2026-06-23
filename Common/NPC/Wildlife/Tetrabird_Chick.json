@@ -1,0 +1,137 @@
+{
+  "Parent": "Chick",
+  "Model": "NPC/Wildlife/Tetrabird_Chick/Models/Model.blockymodel",
+  "Texture": "NPC/Wildlife/Tetrabird_Chick/Models/Texture.png",
+  "EyeHeight": 0.55,
+  "CrouchOffset": -0.075,
+  "HitBox": {
+    "Max": {
+      "X": 0.2,
+      "Y": 0.7,
+      "Z": 0.2
+    },
+    "Min": {
+      "X": -0.2,
+      "Y": 0,
+      "Z": -0.2
+    }
+  },
+	"RandomAttachmentSets": {
+		"Base": {
+			"2000": {
+				"Model": "NPC/Wildlife/Tetrabird_Chick/Models/Model.blockymodel",
+				"Texture": "NPC/Wildlife/Tetrabird_Chick/Models/Empty.png",
+				"Weight": 3
+			},
+			"2001": {
+				"Model": "NPC/Wildlife/Tetrabird_Chick/Models/Model.blockymodel",
+				"Texture": "NPC/Wildlife/Tetrabird_Chick/Models/Attachments/Base_2001.png",
+				"Weight": 5
+			},
+			"2002": {
+				"Model": "NPC/Wildlife/Tetrabird_Chick/Models/Model.blockymodel",
+				"Texture": "NPC/Wildlife/Tetrabird_Chick/Models/Attachments/Base_2002.png",
+				"Weight": 5
+			},
+			"2003": {
+				"Model": "NPC/Wildlife/Tetrabird_Chick/Models/Model.blockymodel",
+				"Texture": "NPC/Wildlife/Tetrabird_Chick/Models/Attachments/Base_2003.png",
+				"Weight": 5
+			},
+			"2004": {
+				"Model": "NPC/Wildlife/Tetrabird_Chick/Models/Model.blockymodel",
+				"Texture": "NPC/Wildlife/Tetrabird_Chick/Models/Attachments/Base_2004.png",
+				"Weight": 5
+			},
+			"2005": {
+				"Model": "NPC/Wildlife/Tetrabird_Chick/Models/Model.blockymodel",
+				"Texture": "NPC/Wildlife/Tetrabird_Chick/Models/Attachments/Base_2005.png",
+				"Weight": 5
+			},
+			"2006": {
+				"Model": "NPC/Wildlife/Tetrabird_Chick/Models/Model.blockymodel",
+				"Texture": "NPC/Wildlife/Tetrabird_Chick/Models/Attachments/Base_2006.png",
+				"Weight": 5
+			},
+			"2007": {
+				"Model": "NPC/Wildlife/Tetrabird_Chick/Models/Model.blockymodel",
+				"Texture": "NPC/Wildlife/Tetrabird_Chick/Models/Attachments/Base_2007.png",
+				"Weight": 5
+			},
+			"2008": {
+				"Model": "NPC/Wildlife/Tetrabird_Chick/Models/Model.blockymodel",
+				"Texture": "NPC/Wildlife/Tetrabird_Chick/Models/Attachments/Base_2008.png",
+				"Weight": 5
+			},
+			"2009": {
+				"Model": "NPC/Wildlife/Tetrabird_Chick/Models/Model.blockymodel",
+				"Texture": "NPC/Wildlife/Tetrabird_Chick/Models/Attachments/Base_2009.png",
+				"Weight": 5
+			},
+			"2010": {
+				"Model": "NPC/Wildlife/Tetrabird_Chick/Models/Model.blockymodel",
+				"Texture": "NPC/Wildlife/Tetrabird_Chick/Models/Attachments/Base_2010.png",
+				"Weight": 5
+			}
+		},
+		"Crest": {
+			"2000": {
+				"Model": "NPC/Wildlife/Tetrabird_Chick/Models/Model.blockymodel",
+				"Texture": "NPC/Wildlife/Tetrabird_Chick/Models/Empty.png",
+				"Weight": 1
+			},
+			"2001": {
+				"Model": "NPC/Wildlife/Tetrabird_Chick/Models/Model.blockymodel",
+				"Texture": "NPC/Wildlife/Tetrabird_Chick/Models/Attachments/Crest_2001.png",
+				"Weight": 5
+			},
+			"2002": {
+				"Model": "NPC/Wildlife/Tetrabird_Chick/Models/Model.blockymodel",
+				"Texture": "NPC/Wildlife/Tetrabird_Chick/Models/Attachments/Crest_2002.png",
+				"Weight": 5
+			},
+			"2003": {
+				"Model": "NPC/Wildlife/Tetrabird_Chick/Models/Model.blockymodel",
+				"Texture": "NPC/Wildlife/Tetrabird_Chick/Models/Attachments/Crest_2003.png",
+				"Weight": 5
+			}
+		},
+		"Wings": {
+			"2000": {
+				"Model": "NPC/Wildlife/Tetrabird_Chick/Models/Model.blockymodel",
+				"Texture": "NPC/Wildlife/Tetrabird_Chick/Models/Empty.png",
+				"Weight": 2
+			},
+			"2001": {
+				"Model": "NPC/Wildlife/Tetrabird_Chick/Models/Model.blockymodel",
+				"Texture": "NPC/Wildlife/Tetrabird_Chick/Models/Empty.png",
+				"Weight": 2
+			},
+			"2002": {
+				"Model": "NPC/Wildlife/Tetrabird_Chick/Models/Model.blockymodel",
+				"Texture": "NPC/Wildlife/Tetrabird_Chick/Models/Empty.png",
+				"Weight": 2
+			},
+			"2003": {
+				"Model": "NPC/Wildlife/Tetrabird_Chick/Models/Model.blockymodel",
+				"Texture": "NPC/Wildlife/Tetrabird_Chick/Models/Empty.png",
+				"Weight": 2
+			},
+			"2004": {
+				"Model": "NPC/Wildlife/Tetrabird_Chick/Models/Model.blockymodel",
+				"Texture": "NPC/Wildlife/Tetrabird_Chick/Models/Empty.png",
+				"Weight": 2
+			},
+			"2005": {
+				"Model": "NPC/Wildlife/Tetrabird_Chick/Models/Model.blockymodel",
+				"Texture": "NPC/Wildlife/Tetrabird_Chick/Models/Empty.png",
+				"Weight": 2
+			},
+			"2006": {
+				"Model": "NPC/Wildlife/Tetrabird_Chick/Models/Model.blockymodel",
+				"Texture": "NPC/Wildlife/Tetrabird_Chick/Models/Empty.png",
+				"Weight": 2
+			}
+		}
+	}
+}

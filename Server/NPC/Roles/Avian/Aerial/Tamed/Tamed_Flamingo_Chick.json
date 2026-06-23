@@ -1,6 +1,6 @@
 {
   "Type": "Variant",
-  "Reference": "AH_Template_Livestock_Tamed",
+  "Reference": "Template_Livestock",
   "Modify": {
     "Appearance": "Flamingo_Chick",
     "FlockArray": [

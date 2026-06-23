@@ -1,0 +1,26 @@
+{
+  "Id": "CBA_AH_Beast_Talents",
+  "$Comment": "Only runs when AH is installed. Adds CBA Beast tamed babies to AHTalentBeast instead of maintaining a parallel CBA talent config.",
+  "When": {
+    "ModInstalled": "Alechilles:Alec's Animal Husbandry!"
+  },
+  "Target": "Server/Tamework/Talents/AHTalentBeast.json",
+  "Priority": 40,
+  "Enabled": true,
+  "Operations": [
+    {
+      "Id": "add-tamed-fox-cub-role-id",
+      "Op": "Insert",
+      "Path": "/RoleIds",
+      "Position": "End",
+      "Value": "Tamed_Fox_Cub"
+    },
+    {
+      "Id": "add-tamed-fox-arctic-cub-role-id",
+      "Op": "Insert",
+      "Path": "/RoleIds",
+      "Position": "End",
+      "Value": "Tamed_Fox_Arctic_Cub"
+    }
+  ]
+}

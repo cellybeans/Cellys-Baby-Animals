@@ -1,0 +1,27 @@
+{
+  "Id": "CBA_Flamingo_AH_Roles",
+  "$Comment": "Only runs when AH is installed. Wild chicks switch from the vanilla neutral template to AH's neutral template and become tameable.",
+  "When": {
+    "ModInstalled": "Alechilles:Alec's Animal Husbandry!"
+  },
+  "Target": "Server/NPC/Roles/Avian/Aerial/Flamingo_Chick.json",
+  "Priority": 30,
+  "Enabled": true,
+  "Operations": [
+    {
+      "Id": "use-ah-neutral-template-for-flamingo-chick",
+      "Op": "Replace",
+      "Path": "/Reference",
+      "Value": "AH_Template_Animal_Neutral"
+    },
+    {
+      "Id": "make-flamingo-chick-tameable",
+      "Op": "Merge",
+      "Path": "/Modify",
+      "Value": {
+        "IsTameable": true,
+        "TameRoleChange": "Tamed_Flamingo_Chick"
+      }
+    }
+  ]
+}

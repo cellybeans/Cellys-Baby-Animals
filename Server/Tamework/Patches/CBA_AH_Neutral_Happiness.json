@@ -1,0 +1,26 @@
+{
+  "Id": "CBA_AH_Neutral_Happiness",
+  "$Comment": "Only runs when AH is installed. Adds CBA neutral tamed babies to AHHappNeutral instead of maintaining a parallel CBA happiness config.",
+  "When": {
+    "ModInstalled": "Alechilles:Alec's Animal Husbandry!"
+  },
+  "Target": "Server/Tamework/Happiness/AHHappNeutral.json",
+  "Priority": 40,
+  "Enabled": true,
+  "Operations": [
+    {
+      "Id": "add-tamed-tetrabird-chick-role-id",
+      "Op": "Insert",
+      "Path": "/RoleIds",
+      "Position": "End",
+      "Value": "Tamed_Tetrabird_Chick"
+    },
+    {
+      "Id": "add-tamed-flamingo-chick-role-id",
+      "Op": "Insert",
+      "Path": "/RoleIds",
+      "Position": "End",
+      "Value": "Tamed_Flamingo_Chick"
+    }
+  ]
+}

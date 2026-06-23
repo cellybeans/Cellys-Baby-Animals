@@ -1,0 +1,5 @@
+{
+  "Model": "NPC/Wildlife/Deer/Models/Model.blockymodel",
+  "Texture": "NPC/Wildlife/Deer/Models/Texture.png",
+  "Parent": "Deer_Doe"
+}

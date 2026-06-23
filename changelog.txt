@@ -1,4 +1,20 @@
 Celly's Baby Animals Changelog
+v1.1.0 	-Rewrote all of CBA's Server files to function using the Tamework Patch system,
+     	 which allows use of CBA without manifest-required dependency of Celly's Wildlife
+     	 Skins and Alec's Animal Husbandry! Now only Tamework is 
+     	-Added Tetrabird_Chick, Flamingo_Chick, Fox_Cub and their tamed variants to their 
+     	 parent's Flock and as their own spawn groups, so they can appear in the wild,
+     	 whether or not AH is installed. 
+     	-Added Fox_Cub_Arctic to their parents flock, and as spawns separate spawn groups in 
+     	 zone3 regions where arctic foxes appear. (Arctic Foxes only exist with AAH!)
+      	-Added legacy _Clean model definition files that were part of CWS/CBA workaround for
+     	 texture inheritance issues (fixed in Hytale 0.5.5), to prevent invisible animals
+     	 on old worlds. This fix should stick even if CWS is removed and only CBA remains. 
+       	-Added rare violet eye color for Fox_Arctic_Cub. Red fox inherits only via breeding. 
+     	
+v1.0.7 	-Removed removed all adult NPC role files now that 0.5.5 has fixed the
+     	 texture inheritance issues. No need for workaround!
+     	-Created Github repository for Celly's Baby Animals 
 v1.0.6 	-Re-added adult NPC role files and Deer_Doe model definitions 
      	 now that mod load order can be controlled under world settings
      	-Added cross-breeding for Fox & Fox_Arctic

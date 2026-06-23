@@ -144,6 +144,11 @@
 				"Model": "NPC/Beast/Fox_Cub/Models/Model.blockymodel",
 				"Texture": "NPC/Beast/Fox_Cub/Models/Attachments/Eyes_2502.png",
 				"Weight": 0
+			},
+			"2503": {
+				"Model": "NPC/Beast/Fox_Cub/Models/Model.blockymodel",
+				"Texture": "NPC/Beast/Fox_Cub/Models/Attachments/Eyes_2503.png",
+				"Weight": 0
 			}
 		}
 	}
