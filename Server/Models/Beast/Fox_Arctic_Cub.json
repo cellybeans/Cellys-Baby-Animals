@@ -133,17 +133,22 @@
 			"2500": {
 				"Model": "NPC/Beast/Fox_Cub/Models/Model.blockymodel",
 				"Texture": "NPC/Beast/Fox_Cub/Models/Attachments/Eyes_2500.png",
-				"Weight": 10
+				"Weight": 20
 			},
 			"2501": {
 				"Model": "NPC/Beast/Fox_Cub/Models/Model.blockymodel",
 				"Texture": "NPC/Beast/Fox_Cub/Models/Attachments/Eyes_2501.png",
-				"Weight": 10
+				"Weight": 20
 			},
 			"2502": {
 				"Model": "NPC/Beast/Fox_Cub/Models/Model.blockymodel",
 				"Texture": "NPC/Beast/Fox_Cub/Models/Attachments/Eyes_2502.png",
-				"Weight": 10
+				"Weight": 20
+			},
+			"2503": {
+				"Model": "NPC/Beast/Fox_Cub/Models/Model.blockymodel",
+				"Texture": "NPC/Beast/Fox_Cub/Models/Attachments/Eyes_2502.png",
+				"Weight": 1
 			}
 		}
 	}

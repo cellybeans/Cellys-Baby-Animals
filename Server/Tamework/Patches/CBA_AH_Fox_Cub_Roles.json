@@ -1,0 +1,32 @@
+{
+  "Id": "CBA_AH_Fox_Cub_Roles",
+  "$Comment": "Only runs when AH is installed. Wild cubs switch from the vanilla neutral template to AH's neutral template and become tameable.",
+  "When": {
+    "ModInstalled": "Alechilles:Alec's Animal Husbandry!"
+  },
+  "Target": "Server/NPC/Roles/Creature/Mammal/Fox_Cub.json",
+  "Priority": 30,
+  "Enabled": true,
+  "Operations": [
+    {
+      "Id": "use-ah-predator-template-for-fox-cub",
+      "Op": "Replace",
+      "Path": "/Reference",
+      "Value": "AH_Template_Predator"
+    },
+    {
+      "Id": "make-fox-cub-tameable",
+      "Op": "Merge",
+      "Path": "/Modify",
+      "Value": {
+        "IsTameable": true,
+        "TameRoleChange": "Tamed_Fox_Cub",
+        "AttractiveItemSet": [
+          "Food_Chicken_Raw"
+        ],
+        "AttractiveItemSetParticles": "Want_Food_Chicken_Raw",
+        "TranquilizerSleepThresholdSeconds": 10
+      }
+    }
+  ]
+}

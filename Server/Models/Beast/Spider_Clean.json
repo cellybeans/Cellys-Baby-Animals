@@ -1,0 +1,5 @@
+{
+  "Model": "NPC/Beast/Spider/Models/Model.blockymodel",
+  "Texture": "NPC/Beast/Spider/Models/Texture.png",
+  "Parent": "Spider"
+}

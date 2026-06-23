@@ -1,0 +1,40 @@
+{
+  "Id": "CBA_AH_Neutral_Traits",
+  "$Comment": "Only runs when AH is installed. Adds CBA neutral babies to AHTraitNeutral instead of maintaining a parallel CBA trait config.",
+  "When": {
+    "ModInstalled": "Alechilles:Alec's Animal Husbandry!"
+  },
+  "Target": "Server/Tamework/Traits/AHTraitNeutral.json",
+  "Priority": 40,
+  "Enabled": true,
+  "Operations": [
+    {
+      "Id": "add-tetrabird-chick-role-id",
+      "Op": "Insert",
+      "Path": "/RoleIds",
+      "Position": "End",
+      "Value": "Tetrabird_Chick"
+    },
+    {
+      "Id": "add-tamed-tetrabird-chick-role-id",
+      "Op": "Insert",
+      "Path": "/RoleIds",
+      "Position": "End",
+      "Value": "Tamed_Tetrabird_Chick"
+    },
+    {
+      "Id": "add-flamingo-chick-role-id",
+      "Op": "Insert",
+      "Path": "/RoleIds",
+      "Position": "End",
+      "Value": "Flamingo_Chick"
+    },
+    {
+      "Id": "add-tamed-flamingo-chick-role-id",
+      "Op": "Insert",
+      "Path": "/RoleIds",
+      "Position": "End",
+      "Value": "Tamed_Flamingo_Chick"
+    }
+  ]
+}

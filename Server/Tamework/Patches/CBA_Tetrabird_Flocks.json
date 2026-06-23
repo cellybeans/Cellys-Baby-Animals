@@ -1,0 +1,25 @@
+{
+  "Id": "CBA_Tetrabird_Flocks",
+  "$Comment": "Always patch any loaded adult Tetrabird role so wild flocks can include CBA chicks. TargetExists is evaluated per target.",
+  "Target": "Server/NPC/Roles/Avian/Raptor/Tetrabird.json",
+  "When": {
+    "TargetExists": true
+  },
+  "Priority": 20,
+  "Enabled": true,
+  "Operations": [
+    {
+      "Id": "set-adult-tetrabird-flock-array",
+      "Op": "Merge",
+      "Path": "/",
+      "Value": {
+        "Modify": {
+          "FlockArray": [
+            "Tetrabird",
+            "Tetrabird_Chick"
+          ]
+        }
+      }
+    }
+  ]
+}

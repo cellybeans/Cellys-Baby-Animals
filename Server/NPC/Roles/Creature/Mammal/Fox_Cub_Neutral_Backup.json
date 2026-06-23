@@ -1,8 +1,12 @@
 {
   "Type": "Variant",
-  "Reference": "Template_Predator",
+  "Reference": "Template_Animal_Neutral",
   "Modify": {
     "Appearance": "Fox_Cub",
+    "FlockArray": [
+      "Fox",
+      "Fox_Cub"
+    ],
     "DropList": "Drop_Fox",
     "MaxHealth": 17,
     "MaxSpeed": 6,
@@ -10,42 +14,6 @@
     "ViewRange": 8,
     "HearingRange": 5,
     "AbsoluteDetectionRange": 2,
-    "AlertedRange": 14,
-    "AlertedTime": [
-      2,
-      3
-    ],
-    "MaintainDistanceWhileAlerted": false,
-    "ThreatenDelayRange": [
-      2,
-      2
-    ],
-    "ThreatenAnimation": "Threaten",
-    "FleeIfNotThreatened": true,
-    "FleeRange": 12,
-    "HardLeashDistance": 60,
-    "LeashDistance": 30,
-    "LeashMinPlayerDistance": 5,
-    "LeashTimer": [
-      4,
-      5
-    ],
-    "Attack": "Root_NPC_Fox_Attack",
-    "AttackDistance": 1.0,
-    "CombatBehaviorDistance": 3,
-    "CombatDirectWeight": 0,
-    "CombatStrafeWeight": 5,
-    "CombatBackOffAfterAttack": false,
-    "ChaseRelativeSpeed": 1,
-    "CombatMovingRelativeSpeed": 0.6,
-    "AlwaysSleepAtNight": false,
-    "NightFlavorAnimation": "Howl",
-    "DayTimeNapWeight": 8,
-    "DayTimeNapTimeRange": [
-      10,
-      12
-    ],
-    "TimidDuringDay": true,
     "IsMemory": true,
     "MemoriesCategory": "Predator",
     "_InteractionVars": {
@@ -69,7 +37,7 @@
             "DamageCalculator": {
               "Type": "Absolute",
               "BaseDamage": {
-                "Physical": 8
+                "Physical": 6
               },
               "RandomPercentageModifier": 0.1
             },
@@ -84,11 +52,17 @@
     },
     "NameTranslationKey": {
       "Compute": "NameTranslationKey"
-    }
+    },
+    "IsTameable": false,
+    "TameRoleChange": "Tamed_Fox_Cub",
+    "AttractiveItemSet": [
+      "Food_Chicken_Raw"
+    ],
+    "AttractiveItemSetParticles": "Want_Food_Chicken_Raw"
   },
   "Parameters": {
     "NameTranslationKey": {
-      "Value": "server.npcRoles.Tamed_Fox_Cub.name",
+      "Value": "server.npcRoles.Fox_Cub.name",
       "Description": "Translation key for NPC name display"
     }
   }

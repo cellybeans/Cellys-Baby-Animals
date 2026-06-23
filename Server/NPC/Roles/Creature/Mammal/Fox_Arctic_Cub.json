@@ -1,6 +1,6 @@
 {
   "Type": "Variant",
-  "Reference": "AH_Template_Predator",
+  "Reference": "Template_Predator",
   "Modify": {
     "Appearance": "Fox_Arctic_Cub",
     "DropList": "Drop_Fox",
@@ -31,8 +31,8 @@
       5
     ],
     "Attack": "Root_NPC_Fox_Attack",
-    "AttackDistance": 1.0,
-    "CombatBehaviorDistance": 3,
+    "AttackDistance": 2.5,
+    "CombatBehaviorDistance": 2,
     "CombatDirectWeight": 0,
     "CombatStrafeWeight": 5,
     "CombatBackOffAfterAttack": true,
@@ -84,27 +84,12 @@
     },
     "NameTranslationKey": {
       "Compute": "NameTranslationKey"
-    },
-    "IsTameable": true,
-    "TameRoleChange": "Tamed_Fox_Arctic_Cub",
-    "AttractiveItemSet": [
-      "Food_Chicken_Raw"
-    ],
-    "TranquilizerSleepThresholdSeconds": 50,
-    "AttractiveItemSetParticles": "Want_Food_Chicken_Raw"
+    }
   },
   "Parameters": {
     "NameTranslationKey": {
       "Value": "server.npcRoles.Fox_Arctic_Cub.name",
       "Description": "Translation key for NPC name display"
-    },
-    "IsTameable": {
-      "Value": true,
-      "Description": "Whether this NPC can be tamed."
-    },
-    "TameRoleChange": {
-      "Value": "Tamed_Fox_Arctic_Cub",
-      "Description": "The role the NPC will change into when it's tamed."
     }
   }
 }

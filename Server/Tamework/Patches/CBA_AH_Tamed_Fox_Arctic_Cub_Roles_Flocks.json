@@ -1,0 +1,54 @@
+{
+  "Id": "CBA_AH_Tamed_Fox_Arctic_Cub_Roles",
+  "$Comment": "Only runs when AH is installed. Tamed cubs switch from the vanilla livestock template to AH's tamed livestock template.",
+  "When": {
+    "ModInstalled": "Alechilles:Alec's Animal Husbandry!"
+  },
+  "Target": "Server/NPC/Roles/Creature/Mammal/Tamed/Tamed_Fox_Arctic_Cub.json",
+  "Priority": 30,
+  "Enabled": true,
+  "Operations": [
+    {
+      "Id": "use-ah-tamed-template-for-fox-arctic-cub",
+      "Op": "Replace",
+      "Path": "/Reference",
+      "Value": "AH_Template_Predator_Tamed"
+    },
+    {
+      "Id": "add-ah-command-capabilities-for-fox-arctic-cub",
+      "Op": "Merge",
+      "Path": "/Modify",
+      "Value": {
+        "IsMemory": false,
+        "AttitudeGroup": "AH_Predator_Tamed",
+        "AttractiveItemSetParticles": "Want_Food_Chicken_Raw",
+        "CanFollow": true,
+        "CanHold": true,
+        "CanDefend": true,
+        "CanAttackTarget": true,
+        "CanMoveToLocation": true,
+        "CanReturnHome": true,
+        "CanRecall": true,
+        "CanSetHome": true,
+        "CanBreedPair": true,
+        "NeedsSeekConsumeAnimation": ""
+      },
+      "AttractiveItemSet": [
+        "Food_Chicken_Raw"
+      ]
+    },
+    {
+      "Id": "set-tamed-fox-arctic-cub-flock-array",
+      "Op": "Merge",
+      "Path": "/",
+      "Value": {
+        "Modify": {
+          "FlockArray": [
+            "Tamed_Fox_Arctic",
+            "Tamed_Fox_Arctic_Cub"
+          ]
+        }
+      }
+    }
+  ]
+}

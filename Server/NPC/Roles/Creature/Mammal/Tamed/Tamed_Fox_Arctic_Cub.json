@@ -1,6 +1,6 @@
 {
   "Type": "Variant",
-  "Reference": "AH_Template_Predator_Tamed",
+  "Reference": "Template_Predator",
   "Modify": {
     "Appearance": "Fox_Arctic_Cub",
     "DropList": "Drop_Fox",
@@ -31,7 +31,7 @@
       5
     ],
     "Attack": "Root_NPC_Fox_Attack",
-    "AttackDistance": 1.0,
+    "AttackDistance": 2.5,
     "CombatBehaviorDistance": 3,
     "CombatDirectWeight": 0,
     "CombatStrafeWeight": 5,
@@ -84,20 +84,7 @@
     },
     "NameTranslationKey": {
       "Compute": "NameTranslationKey"
-    },
-    "AttractiveItemSet": [
-      "Food_Chicken_Raw"
-    ],
-    "CanFollow": true,
-    "CanHold": true,
-    "CanDefend": true,
-    "CanAttackTarget": true,
-    "CanMoveToLocation": true,
-    "CanReturnHome": true,
-    "CanRecall": true,
-    "CanSetHome": true,
-    "CanBreedPair": true,
-    "NeedsSeekConsumeAnimation": ""
+    }
   },
   "Parameters": {
     "NameTranslationKey": {

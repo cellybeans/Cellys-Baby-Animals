@@ -1,0 +1,84 @@
+{
+  "Id": "CBA_AH_Neutral_Breeding",
+  "$Comment": "Only runs when AH is installed. Adds CBA neutral baby lifecycle data to AHBreedNeutral instead of maintaining a parallel CBA breeding config.",
+  "When": {
+    "ModInstalled": "Alechilles:Alec's Animal Husbandry!"
+  },
+  "Target": "Server/Tamework/Breeding/AHBreedNeutral.json",
+  "Priority": 40,
+  "Enabled": true,
+  "Operations": [
+    {
+      "Id": "add-tamed-tetrabird-chick-role-id",
+      "Op": "Insert",
+      "Path": "/RoleIds",
+      "Position": "End",
+      "Value": "Tamed_Tetrabird_Chick"
+    },
+    {
+      "Id": "add-tetrabird-lifecycle-overrides",
+      "Op": "Merge",
+      "Path": "/RoleOverrides",
+      "Value": {
+        "Tamed_Tetrabird": {
+          "OffspringLifecycle": {
+            "Families": [
+              {
+                "AdultRoleId": "Tamed_Tetrabird",
+                "BabyRoleId": "Tamed_Tetrabird_Chick",
+                "TimeToFullGrownMinutes": 60
+              }
+            ]
+          }
+        },
+        "Tamed_Tetrabird_Chick": {
+          "OffspringLifecycle": {
+            "Families": [
+              {
+                "AdultRoleId": "Tamed_Tetrabird",
+                "BabyRoleId": "Tamed_Tetrabird_Chick",
+                "TimeToFullGrownMinutes": 60
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "Id": "add-tamed-flamingo-chick-role-id",
+      "Op": "Insert",
+      "Path": "/RoleIds",
+      "Position": "End",
+      "Value": "Tamed_Flamingo_Chick"
+    },
+    {
+      "Id": "add-flamingo-lifecycle-overrides",
+      "Op": "Merge",
+      "Path": "/RoleOverrides",
+      "Value": {
+        "Tamed_Flamingo": {
+          "OffspringLifecycle": {
+            "Families": [
+              {
+                "AdultRoleId": "Tamed_Flamingo",
+                "BabyRoleId": "Tamed_Flamingo_Chick",
+                "TimeToFullGrownMinutes": 60
+              }
+            ]
+          }
+        },
+        "Tamed_Flamingo_Chick": {
+          "OffspringLifecycle": {
+            "Families": [
+              {
+                "AdultRoleId": "Tamed_Flamingo",
+                "BabyRoleId": "Tamed_Flamingo_Chick",
+                "TimeToFullGrownMinutes": 60
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

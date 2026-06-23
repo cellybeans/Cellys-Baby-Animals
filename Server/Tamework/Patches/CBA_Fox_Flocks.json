@@ -1,0 +1,25 @@
+{
+  "Id": "CBA_Fox_Flocks",
+  "$Comment": "Always patch any loaded adult Fox role so wild flocks can include CBA cubs. TargetExists is evaluated per target.",
+  "Target": "Server/NPC/Roles/Creature/Mammal/Fox.json",
+  "When": {
+    "TargetExists": true
+  },
+  "Priority": 20,
+  "Enabled": true,
+  "Operations": [
+    {
+      "Id": "set-adult-fox-flock-array",
+      "Op": "Merge",
+      "Path": "/",
+      "Value": {
+        "Modify": {
+          "FlockArray": [
+            "Fox",
+            "Fox_Cub"
+          ]
+        }
+      }
+    }
+  ]
+}

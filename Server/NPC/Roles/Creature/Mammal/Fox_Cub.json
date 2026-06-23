@@ -1,16 +1,20 @@
 {
   "Type": "Variant",
-  "Reference": "AH_Template_Predator",
+  "Reference": "Template_Predator",
   "Modify": {
     "Appearance": "Fox_Cub",
+    "FlockArray": [
+      "Fox",
+      "Fox_Cub"
+    ],
     "DropList": "Drop_Fox",
-    "MaxHealth": 17,
+    "MaxHealth": 18,
     "MaxSpeed": 6,
     "WanderRadius": 8,
-    "ViewRange": 8,
-    "HearingRange": 5,
+    "ViewRange": 10,
+    "HearingRange": 8,
     "AbsoluteDetectionRange": 2,
-    "AlertedRange": 14,
+    "AlertedRange": 18,
     "AlertedTime": [
       2,
       3
@@ -22,7 +26,7 @@
     ],
     "ThreatenAnimation": "Threaten",
     "FleeIfNotThreatened": true,
-    "FleeRange": 12,
+    "FleeRange": 16,
     "HardLeashDistance": 60,
     "LeashDistance": 30,
     "LeashMinPlayerDistance": 5,
@@ -31,10 +35,10 @@
       5
     ],
     "Attack": "Root_NPC_Fox_Attack",
-    "AttackDistance": 1.0,
-    "CombatBehaviorDistance": 3,
+    "AttackDistance": 2.0,
+    "CombatBehaviorDistance": 4,
     "CombatDirectWeight": 0,
-    "CombatStrafeWeight": 5,
+    "CombatStrafeWeight": 8,
     "CombatBackOffAfterAttack": true,
     "ChaseRelativeSpeed": 1,
     "CombatMovingRelativeSpeed": 0.6,
@@ -84,27 +88,12 @@
     },
     "NameTranslationKey": {
       "Compute": "NameTranslationKey"
-    },
-    "IsTameable": true,
-    "TameRoleChange": "Tamed_Fox_Cub",
-    "AttractiveItemSet": [
-      "Food_Chicken_Raw"
-    ],
-    "TranquilizerSleepThresholdSeconds": 50,
-    "AttractiveItemSetParticles": "Want_Food_Chicken_Raw"
+    }
   },
   "Parameters": {
     "NameTranslationKey": {
       "Value": "server.npcRoles.Fox_Cub.name",
       "Description": "Translation key for NPC name display"
-    },
-    "IsTameable": {
-      "Value": true,
-      "Description": "Whether this NPC can be tamed."
-    },
-    "TameRoleChange": {
-      "Value": "Tamed_Fox_Cub",
-      "Description": "The role the NPC will change into when it's tamed."
     }
   }
 }

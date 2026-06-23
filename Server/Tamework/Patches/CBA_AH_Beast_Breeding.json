@@ -1,0 +1,202 @@
+{
+  "Id": "CBA_AH_Beast_Breeding",
+  "$Comment": "Only runs when AH is installed. Adds CBA Beast baby lifecycle data to AHBreedBeast instead of maintaining a parallel CBA breeding config.",
+  "When": {
+    "ModInstalled": "Alechilles:Alec's Animal Husbandry!"
+  },
+  "Target": "Server/Tamework/Breeding/AHBreedBeast.json",
+  "Priority": 40,
+  "Enabled": true,
+  "Operations": [
+    {
+      "Id": "add-tamed-fox-cub-role-id",
+      "Op": "Insert",
+      "Path": "/RoleIds",
+      "Position": "End",
+      "Value": "Tamed_Fox_Cub"
+    },
+    {
+      "Id": "add-tamed-fox-arctic-cub-role-id",
+      "Op": "Insert",
+      "Path": "/RoleIds",
+      "Position": "End",
+      "Value": "Tamed_Fox_Arctic_Cub"
+    },
+    {
+      "Id": "add-fox-lifecycle-overrides",
+      "Op": "Merge",
+      "Path": "/RoleOverrides",
+      "Value": {
+        "Tamed_Fox": {
+          "Pairing": {
+            "MaxNearbySameType": 6,
+            "RequireSameRoleId": false,
+            "RoleCompatibility": "SameLifecycleFamily"
+          },
+          "Cooldowns": {
+            "BaseCooldownMinutes": 60,
+            "MinDelaySeconds": 180,
+            "MaxDelaySeconds": 540
+          },
+          "OffspringLifecycle": {
+            "Enabled": true,
+            "RoleInheritance": {
+              "Mode": "ParentLine",
+              "ParentWeight": 1.0,
+              "RandomWeight": 0.0,
+              "MutationChance": 0.0
+            },
+            "Families": [
+              {
+                "Id": "Fox",
+                "Lines": [
+                  {
+                    "Id": "RedFox",
+                    "AdultRoleId": "Tamed_Fox",
+                    "BabyRoleId": "Tamed_Fox_Cub"
+                  },
+                  {
+                    "Id": "ArcticFox",
+                    "AdultRoleId": "Tamed_Fox_Arctic",
+                    "BabyRoleId": "Tamed_Fox_Arctic_Cub"
+                  }
+                ],    
+                "BabyStartScale": 0.8,
+                "AdolescentStartScale": 0.9,
+                "AdultStartScale": 0.95,
+                "AdolescentSwitchScale": 0.99,
+                "AdultSwitchScale": 1.0,
+                "TimeToFullGrownMinutes": 100
+              }
+            ]
+          }
+        },
+        "Tamed_Fox_Arctic": {
+          "Pairing": {
+            "MaxNearbySameType": 6,
+            "RequireSameRoleId": false,
+            "RoleCompatibility": "SameLifecycleFamily"
+          },
+          "Cooldowns": {
+            "BaseCooldownMinutes": 60,
+            "MinDelaySeconds": 180,
+            "MaxDelaySeconds": 540
+          },
+          "OffspringLifecycle": {
+            "Enabled": true,
+            "RoleInheritance": {
+              "Mode": "ParentLine",
+              "ParentWeight": 1.0,
+              "RandomWeight": 0.0,
+              "MutationChance": 0.0
+            },
+            "Families": [
+              {
+                "Id": "Fox",
+                "Lines": [
+                  {
+                    "Id": "RedFox",
+                    "AdultRoleId": "Tamed_Fox",
+                    "BabyRoleId": "Tamed_Fox_Cub"
+                  },
+                  {
+                    "Id": "ArcticFox",
+                    "AdultRoleId": "Tamed_Fox_Arctic",
+                    "BabyRoleId": "Tamed_Fox_Arctic_Cub"
+                  }
+                ],    
+                "BabyStartScale": 0.8,
+                "AdolescentStartScale": 0.9,
+                "AdultStartScale": 0.95,
+                "AdolescentSwitchScale": 0.99,
+                "AdultSwitchScale": 1.0,
+                "TimeToFullGrownMinutes": 100
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "Id": "add-wolf-lifecycle-overrides",
+      "Op": "Merge",
+      "Path": "/RoleOverrides",
+      "Value": {
+        "Tamed_Wolf_Black": {
+          "Pairing": {
+            "MaxNearbySameType": 5,
+            "RequireSameRoleId": false,
+            "RoleCompatibility": "SameLifecycleFamily"
+          },
+          "Cooldowns": {
+            "BaseCooldownMinutes": 70,
+            "MinDelaySeconds": 210,
+            "MaxDelaySeconds": 630
+          },
+          "OffspringLifecycle": {
+            "Enabled": true,
+            "RoleInheritance": {
+              "Mode": "ParentLine",
+              "ParentWeight": 1.0,
+              "RandomWeight": 0.0,
+              "MutationChance": 0.0
+            },
+            "Families": [
+              {
+                "Id": "Wolf",
+                "Lines": [
+                  {
+                    "Id": "BlackWolf",
+                    "AdultRoleId": "Tamed_Wolf_Black"
+                  },
+                  {
+                    "Id": "WhiteWolf",
+                    "AdultRoleId": "Tamed_Wolf_White"
+                  }
+                ]
+              }
+            ],
+            "TimeToFullGrownMinutes": 120
+          }
+        },
+        "Tamed_Wolf_White": {
+          "Pairing": {
+            "MaxNearbySameType": 5,
+            "RequireSameRoleId": false,
+            "RoleCompatibility": "SameLifecycleFamily"
+          },
+          "Cooldowns": {
+            "BaseCooldownMinutes": 70,
+            "MinDelaySeconds": 210,
+            "MaxDelaySeconds": 630
+          },
+          "OffspringLifecycle": {
+            "Enabled": true,
+            "RoleInheritance": {
+              "Mode": "ParentLine",
+              "ParentWeight": 1.0,
+              "RandomWeight": 0.0,
+              "MutationChance": 0.0
+            },
+            "Families": [
+              {
+                "Id": "Wolf",
+                "Lines": [
+                  {
+                    "Id": "BlackWolf",
+                    "AdultRoleId": "Tamed_Wolf_Black"
+                  },
+                  {
+                    "Id": "WhiteWolf",
+                    "AdultRoleId": "Tamed_Wolf_White"
+                  }
+                ]
+              }
+            ],
+            "TimeToFullGrownMinutes": 120
+          }
+        }
+      }
+    }
+  ]
+}

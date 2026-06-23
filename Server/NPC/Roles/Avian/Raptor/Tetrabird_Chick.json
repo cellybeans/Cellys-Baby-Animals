@@ -1,6 +1,6 @@
 {
   "Type": "Variant",
-  "Reference": "AH_Template_Animal_Neutral",
+  "Reference": "Template_Animal_Neutral",
   "Modify": {
     "Appearance": "Tetrabird_Chick",
     "FlockArray": [
@@ -10,42 +10,31 @@
     "DropList": "Drop_Tetrabird",
     "MaxHealth": 15,
     "MaxSpeed": 4,
+    "RunThreshold": 0.6,
+    "WanderRadius": 8,
     "ViewRange": 12,
     "ViewSector": 300,
     "HearingRange": 7,
-    "AlertedRange": 14,
-    "AlertedActionRange": 5,
     "AbsoluteDetectionRange": 1,
-    "IsTameable": {
-      "Compute": "IsTameable"
-    },
-    "TameRoleChange": {
-      "Compute": "TameRoleChange"
-    },
+    "AttractiveItemSet": [
+      "Plant_Fruit_Berries_Red"
+    ],
+    "AttractiveItemSetParticles": "Want_Food_Wild_Berry_Red",
+    "DayTimeNapWeight": 2,
+    "DayFlavorAnimation": "Idle",
+    "IsTameable": false,
+    "TameRoleChange": "Tamed_Tetrabird_Chick",
     "IsMemory": true,
-    "Timid": true,
     "MemoriesCategory": "Avian",
     "MemoriesNameOverride": "Tetrabird_Chick",
     "NameTranslationKey": {
       "Compute": "NameTranslationKey"
-    },
-    "AttractiveItemSet": [
-      "Plant_Fruit_Berries_Red"
-    ],
-    "AttractiveItemSetParticles": "Want_Food_Wild_Berry_Red"
+    }
   },
   "Parameters": {
     "NameTranslationKey": {
       "Value": "server.npcRoles.Tetrabird_Chick.name",
       "Description": "Translation key for NPC name display"
-    },
-    "IsTameable": {
-      "Value": true,
-      "Description": "Whether this NPC can be tamed."
-    },
-    "TameRoleChange": {
-      "Value": "Tamed_Tetrabird_Chick",
-      "Description": "The role the NPC will change into when it's tamed."
     }
   }
 }

@@ -1,0 +1,25 @@
+{
+  "Id": "CBA_Flamingo_Flocks",
+  "$Comment": "Always patch any loaded adult Flamingo role so wild flocks can include CBA chicks. TargetExists is evaluated per target.",
+  "Target": "Server/NPC/Roles/Avian/Aerial/Flamingo.json",
+  "When": {
+    "TargetExists": true
+  },
+  "Priority": 20,
+  "Enabled": true,
+  "Operations": [
+    {
+      "Id": "set-adult-flamingo-flock-array",
+      "Op": "Merge",
+      "Path": "/",
+      "Value": {
+        "Modify": {
+          "FlockArray": [
+            "Flamingo",
+            "Flamingo_Chick"
+          ]
+        }
+      }
+    }
+  ]
+}
