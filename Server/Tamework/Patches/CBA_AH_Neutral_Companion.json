@@ -13,9 +13,7 @@
       "Op": "Insert",
       "Path": "/RoleIds",
       "Position": "End",
-      "Value": [
-        "Tamed_Tetrabird_Chick"
-      ]
+      "Value": "Tamed_Tetrabird_Chick"
     },
     {
       "Id": "add-tamed-flamingo-chick-role-id",

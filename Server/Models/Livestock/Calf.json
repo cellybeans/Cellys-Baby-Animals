@@ -1,0 +1,8 @@
+{
+  	"Parent": "Calf_Base",
+	"Model": "NPC/Livestock/Calf/Models/Model.blockymodel",
+	"Texture": "NPC/Livestock/Calf/Models/Texture.png",
+
+	"RandomAttachmentSets": {
+	}
+}

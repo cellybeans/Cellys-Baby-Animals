@@ -1,0 +1,45 @@
+{
+  "Type": "TwAttachmentDisplayConfig",
+  "Enabled": true,
+  "Priority": 10,
+  "Entries": [
+    {
+      "Id": "excellynt-cba-als-cow-calf-attachments",
+      "AppliesTo": {
+        "RoleIds": [
+          "Cow",
+          "Cow_Calf",
+          "Tamed_Cow",
+          "Tamed_Cow_Calf"
+        ],
+        "ModelIds": [
+          "Cow",
+          "Cow_Calf"
+        ]
+      },
+      "Sets": {
+        "BaseColor": {
+          "Label": "Fur Color",
+          "Values": {
+            "0": "Blonde",
+            "1": "Brown",
+            "2": "Red",
+            "3": "Dark Blonde",
+            "4": "Black",
+            "5": "Gray",
+            "6": "Light Gray",
+            "7": "Gray with white accent"
+          
+          }
+        },
+        "Fleece": {
+          "Label": "Udder",
+          "Values": {
+            "Wool": "Udder"
+          
+          }
+        }
+      }
+    }
+  ]
+}

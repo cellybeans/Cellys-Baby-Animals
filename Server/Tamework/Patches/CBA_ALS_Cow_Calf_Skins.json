@@ -1,0 +1,60 @@
+{
+  "Id": "CBA_ALS_Cow_Calf_Skins",
+  "$Comment": "Patch any loaded adult Fox_Arctic role so wild flocks can include CBA cubs. TargetExists is evaluated per target.",
+  "Target": "Server/Models/Livestock/Calf.json",
+  "When": {
+    "ModInstalled": "BlackAures:Aures - Livestock Skins"
+  },
+  "Priority": 20,
+  "Enabled": true,
+  "Operations": [
+    {
+      "Id": "enable-cow-calf-skins-to-match-aures",
+      "Op": "Merge",
+      "Path": "/RandomAttachmentSets",
+      "Value": {
+        "Fleece": {
+          "Wool": {
+            "Model": "NPC/Livestock/Calf/Models/Model.blockymodel",
+            "Texture": "NPC/Livestock/Calf/Models/Empty.png"
+          }
+        },
+        "BaseColor": {
+          "0": {
+            "Model": "NPC/Livestock/Calf/Models/Model.blockymodel",
+            "Texture": "NPC/Livestock/Calf/Models/Empty.png",
+            "Weight": 3
+          },
+          "1": {
+            "Model": "NPC/Livestock/Calf/Models/Model.blockymodel",
+            "Texture": "NPC/Livestock/Calf/Models/Attachments/Base_1.png"
+          },
+          "2": {
+            "Model": "NPC/Livestock/Calf/Models/Model.blockymodel",
+            "Texture": "NPC/Livestock/Calf/Models/Attachments/Base_2.png"
+          },
+          "3": {
+            "Model": "NPC/Livestock/Calf/Models/Model.blockymodel",
+            "Texture": "NPC/Livestock/Calf/Models/Attachments/Base_3.png"
+          },
+          "4": {
+            "Model": "NPC/Livestock/Calf/Models/Model.blockymodel",
+            "Texture": "NPC/Livestock/Calf/Models/Attachments/Base_4.png"
+          },
+          "5": {
+            "Model": "NPC/Livestock/Calf/Models/Model.blockymodel",
+            "Texture": "NPC/Livestock/Calf/Models/Attachments/Base_5.png"
+          },
+          "6": {
+            "Model": "NPC/Livestock/Calf/Models/Model.blockymodel",
+            "Texture": "NPC/Livestock/Calf/Models/Attachments/Base_6.png"
+          },
+          "7": {
+            "Model": "NPC/Livestock/Calf/Models/Model.blockymodel",
+            "Texture": "NPC/Livestock/Calf/Models/Attachments/Base_7.png"
+          }
+        }
+      }
+    }
+  ]
+}

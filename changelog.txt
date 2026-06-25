@@ -1,7 +1,13 @@
 Celly's Baby Animals Changelog
+v1.1.1 	-Fixed Fox_Arctic_Cub's rare violet eyes displaying wrong texture. Whoops!
+      	-Added Cow_Calf skins to match Aures Livestock Skins, so baby cows match
+     	 their parents. If Aures is not installed, calves will remain default color. 
+       	-Added Tamework Attachment Display definitions for cow/cow_calf attachments
+      	-Corrected an entry in CBA_AH_Neutral_Companion.json that caused console warnings.
+
 v1.1.0 	-Rewrote all of CBA's Server files to function using the Tamework Patch system,
      	 which allows use of CBA without manifest-required dependency of Celly's Wildlife
-     	 Skins and Alec's Animal Husbandry! Now only Tamework is 
+     	 Skins and Alec's Animal Husbandry! Now only Tamework is hard required.
      	-Added Tetrabird_Chick, Flamingo_Chick, Fox_Cub and their tamed variants to their 
      	 parent's Flock and as their own spawn groups, so they can appear in the wild,
      	 whether or not AH is installed. 
