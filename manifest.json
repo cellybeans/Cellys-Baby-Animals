@@ -1,7 +1,7 @@
 {
   "Group": "excellynt",
   "Name": "Celly's Baby Animals",
-  "Version": "1.1.0",
+  "Version": "1.1.1",
   "Description": "Adds baby animals missing from base game. (Now with Tamework as only required dependency!)",
   "Authors": [
     {
@@ -16,7 +16,7 @@
     "Alechilles:Alec's Tamework!": "*"
   },
   "OptionalDependencies": {
-
+    "BlackAures:Aures - Livestock Skins": "*",
     "excellynt:Celly's Wildlife Skins": "*",
     "Alechilles:Alec's Animal Husbandry!": "*"
 },
