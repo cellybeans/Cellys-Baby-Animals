@@ -79,6 +79,85 @@
           }
         }
       }
+    },
+    {
+      "Id": "add-owl-lifecycle-overrides",
+      "Op": "Merge",
+      "Path": "/RoleOverrides",
+      "Value": {
+        "Tamed_Owl_Brown": {
+          "Pairing": {
+            "RequireSameRoleId": false,
+            "RoleCompatibility": "SameLifecycleFamily"
+          },
+          "Cooldowns": {
+            "BaseCooldownMinutes": 60,
+            "MinDelaySeconds": 180,
+            "MaxDelaySeconds": 540
+          },
+          "OffspringLifecycle": {
+            "Enabled": true,
+            "RoleInheritance": {
+              "Mode": "ParentLine",
+              "ParentWeight": 1.0,
+              "RandomWeight": 0.0,
+              "MutationChance": 0.0
+            },
+            "Families": [
+              {
+                "Id": "Owl",
+                "Lines": [
+                  {
+                    "Id": "BrownOwl",
+                    "AdultRoleId": "Tamed_Owl_Brown"
+                  },
+                  {
+                    "Id": "SnowOwl",
+                    "AdultRoleId": "Tamed_Owl_Snow"
+                  }
+                ]
+              }
+            ],
+            "TimeToFullGrownMinutes": 80
+          }
+        },
+        "Tamed_Owl_Snow": {
+          "Pairing": {
+            "RequireSameRoleId": false,
+            "RoleCompatibility": "SameLifecycleFamily"
+          },
+          "Cooldowns": {
+            "BaseCooldownMinutes": 60,
+            "MinDelaySeconds": 180,
+            "MaxDelaySeconds": 540
+          },
+          "OffspringLifecycle": {
+            "Enabled": true,
+            "RoleInheritance": {
+              "Mode": "ParentLine",
+              "ParentWeight": 1.0,
+              "RandomWeight": 0.0,
+              "MutationChance": 0.0
+            },
+            "Families": [
+              {
+                "Id": "Owl",
+                "Lines": [
+                  {
+                    "Id": "BrownOwl",
+                    "AdultRoleId": "Tamed_Owl_Brown"
+                  },
+                  {
+                    "Id": "SnowOwl",
+                    "AdultRoleId": "Tamed_Owl_Snow"
+                  }
+                ]
+              }
+            ],
+            "TimeToFullGrownMinutes": 80
+          }
+        }
+      }
     }
   ]
 }
