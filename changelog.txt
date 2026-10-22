@@ -1,5 +1,7 @@
 Celly's Baby Animals Changelog
 
+v1.1.4 	-Updated server version to 0.7.0
+
 v1.1.3 	-Added cross-breeding between Owl_Brown and Owl_Snow with AAH for even more varieties from Avian Skins!
      	-Optimized Atlas usage 
      	-Added Bird Nest model for future use
