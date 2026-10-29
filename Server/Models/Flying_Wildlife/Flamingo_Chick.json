@@ -19,8 +19,6 @@
 	"RandomAttachmentSets": {
 		"Base": {
 			"2000": {
-				"Model": "NPC/Flying_Wildlife/Flamingo_Chick/Models/Model.blockymodel",
-				"Texture": "NPC/Empty.png",
 				"Weight": 1
 			},
 			"2001": {
@@ -36,8 +34,6 @@
 		},
 		"Beakfeet": {
 			"2000": {
-				"Model": "NPC/Flying_Wildlife/Flamingo_Chick/Models/Model.blockymodel",
-				"Texture": "NPC/Empty.png",
 				"Weight": 1
 			},
 			"2001": {
@@ -53,9 +49,6 @@
 		},
 		"Eyes": {
 			"2000": {
-				"Model": "NPC/Flying_Wildlife/Flamingo_Chick/Models/Model.blockymodel",
-				"Texture": "NPC/Empty.png",
-				"Weight": 1
 			},
 			"2001": {
 				"Model": "NPC/Flying_Wildlife/Flamingo_Chick/Models/Model.blockymodel",
@@ -70,18 +63,12 @@
 		},
 		"Wings": {
 			"2000": {
-				"Model": "NPC/Flying_Wildlife/Flamingo_Chick/Models/Model.blockymodel",
-				"Texture": "NPC/Empty.png",
 				"Weight": 1
 			},
 			"2001": {
-				"Model": "NPC/Flying_Wildlife/Flamingo_Chick/Models/Model.blockymodel",
-				"Texture": "NPC/Empty.png",
 				"Weight": 1
 			},
 			"2002": {
-				"Model": "NPC/Flying_Wildlife/Flamingo_Chick/Models/Model.blockymodel",
-				"Texture": "NPC/Empty.png",
 				"Weight": 1
 			}
 		}

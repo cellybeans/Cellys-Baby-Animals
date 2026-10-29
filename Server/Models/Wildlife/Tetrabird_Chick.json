@@ -19,8 +19,6 @@
 	"RandomAttachmentSets": {
 		"Base": {
 			"2000": {
-				"Model": "NPC/Wildlife/Tetrabird_Chick/Models/Model.blockymodel",
-				"Texture": "NPC/Empty.png",
 				"Weight": 3
 			},
 			"2001": {
@@ -76,8 +74,6 @@
 		},
 		"Crest": {
 			"2000": {
-				"Model": "NPC/Wildlife/Tetrabird_Chick/Models/Model.blockymodel",
-				"Texture": "NPC/Empty.png",
 				"Weight": 1
 			},
 			"2001": {
@@ -98,38 +94,24 @@
 		},
 		"Wings": {
 			"2000": {
-				"Model": "NPC/Wildlife/Tetrabird_Chick/Models/Model.blockymodel",
-				"Texture": "NPC/Empty.png",
 				"Weight": 2
 			},
 			"2001": {
-				"Model": "NPC/Wildlife/Tetrabird_Chick/Models/Model.blockymodel",
-				"Texture": "NPC/Empty.png",
 				"Weight": 2
 			},
 			"2002": {
-				"Model": "NPC/Wildlife/Tetrabird_Chick/Models/Model.blockymodel",
-				"Texture": "NPC/Empty.png",
 				"Weight": 2
 			},
 			"2003": {
-				"Model": "NPC/Wildlife/Tetrabird_Chick/Models/Model.blockymodel",
-				"Texture": "NPC/Empty.png",
 				"Weight": 2
 			},
 			"2004": {
-				"Model": "NPC/Wildlife/Tetrabird_Chick/Models/Model.blockymodel",
-				"Texture": "NPC/Empty.png",
 				"Weight": 2
 			},
 			"2005": {
-				"Model": "NPC/Wildlife/Tetrabird_Chick/Models/Model.blockymodel",
-				"Texture": "NPC/Empty.png",
 				"Weight": 2
 			},
 			"2006": {
-				"Model": "NPC/Wildlife/Tetrabird_Chick/Models/Model.blockymodel",
-				"Texture": "NPC/Empty.png",
 				"Weight": 2
 			}
 		}
